@@ -1,0 +1,156 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {}
+
+    @keyframes moveLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(300px)
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        50% {}
+
+        75% {}
+
+        100% {}
+    }
+
+    .ctitle {
+        animation: moveLeft 2s ease-out;
+    }
+
+    .cover {
+        height: 90vh;
+        position: relative;
+        background-repeat: none;
+        background-size: 100%;
+        background-position: top;
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%)
+    }
+
+    #title {
+        color: rgba(41, 43, 36, 0.562);
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        left: 40%;
+        top: 50%;
+        position: absolute;
+    }
+</style>
+
+<body>
+
+    {{>publicnav}}
+
+    <div class="row"></div>
+    <div class="col-md-6">
+
+        <div>
+            <h3><b>Contact Us:</b></h3>
+            <address>
+                <strong>Clinic Management System</strong><br>
+                Hamdard Nagar<br>
+                Gazariya, Munsigonj, Bangladesh<br>
+                Phone: 01670790971
+                Email: <a href="mailto:#">cms@gmail.com</a>
+            </address>
+            </ul>
+        </div>
+        <p>
+            <br>
+            <div>
+                <h3><b>Important Contact Numbers:</b></h3>
+                <address>
+                    Emergency: 01970790971<br>
+                    Help Desk: 01770790971<br>
+                    Ambulance: 01870790971<br>
+                    Doctor Appointment: 01570790971<br>
+                    Admission Department: 01370790971<br>
+                </address>
+                </ul>
+            </div>
+        </p>
+
+
+
+    </div>
+    <div class="col-md-6">
+        <h3><b>Feedback and Query</b></h3>
+        <form action="/feedback" method="post">
+            <label for="">Type Of Query</label>
+            <select name="type" id="" class="form-control">
+                <option value="About Hospital">About Hospital</option>
+                <option value="Appointment">Appointment</option>
+                <option value="Enquiry">Enquiry</option>
+                <option value="Compliment">Compliment</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+            <label for="">Full Name</label>
+            <input required="" name="name" type="text" class="form-control" placeholder="Entr the full name">
+            <label for="">Contact No</label>
+            <input required="" type="text" name="contact" class="form-control" placeholder="Entr the contact no">
+            <label for="">Email</label>
+            <input required="" type="text" name="email" class="form-control" placeholder="Entr the Email">
+            <label for="">Feedback/Query</label>
+            <input required="" name="details" type="text" class="form-control" placeholder="Give your opinion">
+            <input type="submit" class="btn btn-success" value="Send Feedback">
+        </form>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+
+        </div>
+        <p>
+    </div>
+    <p>
+        <footer>
+
+
+
+
+            <div class="footer login">
+                <div class="row">
+                    <ol>
+                        <center>
+                            </style>
+                            <p>
+                                <br>
+                                <p>
+                                    <br>
+                                    <p>
+                                        <br>
+                                        <p>
+                                            <br>
+                                            <div class="padded-multiline">
+                                                <p>Developed By Sazzad & Sayed.
+                                                    <p>COPYRIGHT © 2018. All rights reserved.
+                                                    </p>
+                        </center>
+                    </ol>
+                </div>
+            </div>
+        </footer>
+
+
+        </div>
+
+</body>
+
+</html>

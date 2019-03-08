@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {}
+
+    @keyframes moveLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(300px)
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        50% {}
+
+        75% {}
+
+        100% {}
+    }
+
+    .ctitle {
+        animation: moveLeft 2s ease-out;
+    }
+
+    .cover {
+        height: 90vh;
+        position: relative;
+        background-repeat: none;
+        background-size: 100%;
+        background-position: top;
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%)
+    }
+
+    #title {
+        color: rgba(41, 43, 36, 0.562);
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        left: 40%;
+        top: 50%;
+        position: absolute;
+    }
+</style>
+
+<body>
+    
+        {{>publicnav}}
+        
+        <div class="col-md-10 col-md-offset-1">
+            <center>
+            <h3><b>Visiting-Hours</b></h3>
+             </center>
+             <br>
+            <table class="table table-stripped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Section</th>
+                        <th>Saturday to Thursday</th>
+                        <th>Friday / Public Holidays</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ICU / ICCU</td>
+                        <td>3 PM to 5 PM</td>
+                        <td>12 PM to 1 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Ward</td>
+                        <td>3 PM to 7 PM</td>
+                        <td>10 AM to 12 AM / 4 PM to 6 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+             <center>
+            <img style="width:900px" src="https://www.sturdymemorial.org/app/files/public/48/welcome-image.jpg"
+                alt="">
+                 </center>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

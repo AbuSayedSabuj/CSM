@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {}
+
+    @keyframes moveLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(300px)
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        50% {}
+
+        75% {}
+
+        100% {}
+    }
+
+    .ctitle {
+        animation: moveLeft 2s ease-out;
+    }
+
+    .cover {
+        height: 90vh;
+        position: relative;
+        background-repeat: none;
+        background-size: 100%;
+        background-position: top;
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%)
+    }
+
+    #title {
+        color: rgba(41, 43, 36, 0.562);
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        left: 40%;
+        top: 50%;
+        position: absolute;
+    }
+</style>
+
+<body>
+    <div>
+        {{>publicnav}}
+        <center>
+            <h3><b>About Us</b></h3>
+        </center>
+        <div class="row"></div>
+
+    </div>
+    <div class="col-md-4">
+        <h4> <b>Mission</b></h4>
+        <div class="row"></div> The mission of Hamdard Clinic Management System is to provide quality health services
+        and facilities for the community, to promote wellness, to relieve suffering, and to restore health as swiftly,
+        safely, and humanely as it can be done, consistent with the best service we can give at the highest value for
+        all concerned.
+        </ul>
+    </div>
+
+    </div>
+    <div class="col-md-4">
+        <h4> <b>Vision</b></h4>
+        <div class="row"></div> Hamdard Clinic Management System will offer not only the best technical facilities, but
+        also combine the jewel of traditional medicine, and create a medicine which is better than the current
+        medicine. To deliver International Class healthcare with a total service focus, by creating an institution
+        committed to the highest standards of medical & service excellence, patient care, scientific knowledge and
+        medical education.
+        </ul>
+    </div>
+
+    </div>
+    <div class="col-md-4">
+        <h4> <b>Leadership & Excellence</b></h4>
+        <div class="row"></div> At Hamdard Clinic Management System, we have been providing patients with high-quality,
+        patient-focused medical care. We constantly look for ways to raise the bar on quality healthcare and safety for
+        our patients. HCMS Quality Steering Committee made up of representatives from the hospitals' senior leadership,
+        and leaders of the medical staff, set direction as a continuous process.
+        </ul>
+        <div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

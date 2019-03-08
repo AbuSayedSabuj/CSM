@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaCXqR84o5WvhkBWp_aMbqFyHdu3E3dav36vG4EPIjsaBzA7eH"
+        style='height:50px;width:50px;border-radius:50%'>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link " href="/admin">{{admin.name}}
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            {{#if admin.admin}}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Sub Admin
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/admin/addadmin">Add Sub Admin</a>
+                    <a class="dropdown-item" href="/admin/adminlist">Sub Admin List</a>
+
+                </div>
+            </li>
+            {{/if}}
+            {{#if admin.doctor}}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Doctor
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/admin/adddoctor">Add Doctor</a>
+                    <a class="dropdown-item" href="/admin/viewdoctorlist">View Doctor</a>
+
+                </div>
+            </li>
+            {{/if}}
+            {{#if admin.staff}}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Staff
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/admin/addstaff">Add Staff</a>
+                    <a class="dropdown-item" href="/admin/viewstafflist">View Staff</a>
+                    <a class="dropdown-item" href="/admin/viewleave">Leave Application</a>
+                </div>
+            </li>
+            {{/if}}
+            {{#if admin.account}}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Account Info
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/admin/billing">Patient Billing</a>
+                </div>
+            </li>
+            {{/if}}
+            {{#if admin.appointment}}
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/appointmentlist">View Appointments</a>
+            </li>
+            {{/if}}
+
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/feedbacks">View Feedbacks</a>
+            </li>
+
+            {{#if admin.seat}}
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/seatinfo">Seat Info</a>
+            </li>
+            {{/if}}
+            {{#if admin.user}}
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/users">Userlist</a>
+            </li>
+            {{/if}}
+            <li class="nav-item">
+                <a class="nav-link" href="/">Logout</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>

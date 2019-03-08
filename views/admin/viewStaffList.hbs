@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctorlist</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:#e4f3f5">
+
+
+
+    {{>adminnav}}
+    <center>
+        <h3>{{msg}}</h3>
+    </center>
+    {{#each staffs}}
+
+
+    <div class="card" style="height:500px;width: 250px;display:inline-block;margin:20px;padding:10px;">
+        <img style="height:200px;width: 250px;" class="card-img-top" src="../images/staff/{{this.id}}.jpg" alt="Card image cap">
+        <div class="card-body">
+
+            <h5 class="card-title">{{this.name}}</h5>
+            <p class="card-text">Duty Time: {{this.start_time}} to {{this.end_time}}</p>
+
+        </div>
+        <ul class="list-group list-group-flush">
+
+            <li class="list-group-item">{{this.email}}</li>
+            <li class="list-group-item">Phone:{{this.phone}}</li>
+            <li class="list-group-item">Salary:{{this.salary}}</li>
+        </ul>
+        <div class="card-body">
+            <a href="/admin/editstaff?id={{this._id}}" class="card-link">Edit Staff</a>
+            <a href="#" onclick="deleteStaff('{{this._id}}')" class="card-link">Delete Staff</a>
+        </div>
+    </div>
+    </div>
+    {{/each}}
+    </div>
+    </div>
+
+
+</body>
+<script>
+
+    deleteStaff = (id) => {
+        if (window.confirm('Are you sure to delete')) {
+            window.location.href = '/admin/deletestaff?id=' + id;
+        }
+    }
+</script>
+
+</html>

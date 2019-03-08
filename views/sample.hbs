@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {}
+
+    @keyframes moveLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(300px)
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        50% {}
+
+        75% {}
+
+        100% {}
+    }
+
+    .ctitle {
+        animation: moveLeft 2s ease-out;
+    }
+
+    .cover {
+        height: 90vh;
+        position: relative;
+        background-repeat: none;
+        background-size: 100%;
+        background-position: top;
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%)
+    }
+
+    #title {
+        color: rgba(41, 43, 36, 0.562);
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        left: 40%;
+        top: 50%;
+        position: absolute;
+    }
+</style>
+
+<body>
+
+    {{>publicnav}}
+
+    <div class="col-md-10 col-md-offset-1">
+
+        <center>
+            <h3><b>List Of Our Available Medical Test</b></h3>
+        </center>
+        <h5>We have vast amount of Medical test available in our hospital. We have listed them below:</h5>
+        <div class="row">
+            <div class="col-md-4">
+                <h4><b>Aspiration Fluid</b></h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Pleural Fluid </li>
+                    <li class="list-group-item">Ascitic Fluid</li>
+                    <li class="list-group-item">Synovial Fluid</li>
+                    <li class="list-group-item">CSF</li>
+                    <li class="list-group-item">LP Fluid</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4><b>Cardiac Imaging</b></h4>
+                <ul class="list-group">
+                    <li class="list-group-item">E.C.G-12 LEAD</li>
+                    <li class="list-group-item">Digital Computer E.C.G</li>
+                    <li class="list-group-item">Echocardiogram-2d % M-Mode</li>
+                    <li class="list-group-item">Doppler (ECHO) @ Color Flow Imaging</li>
+                    <li class="list-group-item">E.T.T</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4><b>Ultrasound Imaging</b></h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Whole Abdomen & Pelvic Organs</li>
+                    <li class="list-group-item">HBS/Upper Abdomen</li>
+                    <li class="list-group-item">Lower Abdomen/Uterus & adnexae</li>
+                    <li class="list-group-item">KUB/Genito Urinary Tract</li>
+                    <li class="list-group-item">Thyroid/Brain/Scrotum/Testes</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4><b>Digital X-Rays</b></h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Chest P/A View</li>
+                    <li class="list-group-item">Ba-Meal Stomach & Duodenum</li>
+                    <li class="list-group-item">Ba-Swallow Oesophagus</li>
+                    <li class="list-group-item">Oral Cholecystography</li>
+                    <li class="list-group-item">Plain X-Ray Abdomen/C.P.D</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4><b>Dental X-Ray</b></h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Digital RVG X-Ray</li>
+                    <li class="list-group-item">OPG X-Ray</li>
+                    <li class="list-group-item">Periapical X-Ray</li>
+                    <li class="list-group-item">Partial Denture</li>
+                    <li class="list-group-item">Extraction</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4><b>Radiology & Imaging Department</b></h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Cerebral Angiogram</li>
+                    <li class="list-group-item">Carotid Angiogram</li>
+                    <li class="list-group-item">Coronary CT Angiogram</li>
+                    <li class="list-group-item">Upper & Lower Limb Angiogram</li>
+                    <li class="list-group-item">Aorto Angiogram</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4><b>Hematological</b></h4>
+                <ul class="list-group">
+                    <li class="list-group-item">CBC, ECR</li>
+                    <li class="list-group-item">MP</li>
+                    <li class="list-group-item">TC, DC, HB%ESR</li>
+                    <li class="list-group-item">CE.Count</li>
+                    <li class="list-group-item">APTT</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4><b>Urine</b></h4>
+                <ul class="list-group">
+                    <li class="list-group-item">R/E</li>
+                    <li class="list-group-item">C/S</li>
+                    <li class="list-group-item">Pregnancy Test</li>
+                    <li class="list-group-item">Bile Salts</li>
+                    <li class="list-group-item">Urobilinogen</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4><b>MRI(Sound Less) Health Care Machine</b></h4>
+                <ul class="list-group">
+                    <li class="list-group-item">MRA, MRV</li>
+                    <li class="list-group-item">MRI of Brain/Head</li>
+                    <li class="list-group-item">MRI of Whole Spine</li>
+                    <li class="list-group-item">MRI of Lumber Spine</li>
+                    <li class="list-group-item">MRI of Cervical Spine</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

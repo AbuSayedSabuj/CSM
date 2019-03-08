@@ -1,0 +1,26 @@
+[
+  {
+    name: "Sazzad",
+    age: "45",
+    email: "sazzad99@gmail.com",
+    password: "12345",
+    cpassword: "12345",
+    gender: "male",
+    phone: "01670790971",
+    address: "Gazipur",
+    type: 1,
+    id: 1
+  },
+  {
+    name: "Syed",
+    age: "45",
+    email: "syed@gmail.com",
+    password: "12345",
+    cpassword: "12345",
+    gender: "male",
+    phone: "01670790971",
+    address: "Gazipur",
+    type: 2,
+    id: 2
+  }
+];

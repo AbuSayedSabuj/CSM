@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctorlist</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:#e4f3f5">
+
+
+    {{>adminnav}}
+    <center>
+        <h3>{{msg}}</h3>
+    </center>
+    {{#each doctors}}
+
+    <div class="card" style="height:500px;width: 250px;display:inline-block;margin:20px;padding:10px;">
+        <img style="height:200px;width: 250px;" class="card-img-top" src="../images/doctor/{{this.id}}.jpg" alt="Card image cap">
+
+        <ul class="list-group list-group-flush" style="width:250px;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Name:{{this.name}}</li>
+                <li class="list-group-item">Degn:{{this.designation}}</li>
+                <li class="list-group-item">Email:{{this.email}}</li>
+                <li class="list-group-item">Phone:{{this.phone}}</li>
+                <li class="list-group-item">Visiting Fee {{this.fee}}</li>
+            </ul>
+            <div class="card-body">
+                <a href="/admin/editdoctor?id={{this._id}}" class="card-link">Edit Doctor</a>
+                <a href="#" onclick="deleteDoctor('{{this._id}}')" class="card-link">Delete Doctor</a>
+            </div>
+    </div>
+    </div>
+    {{/each}}
+    </div>
+    </div>
+
+
+</body>
+<script>
+    deleteDoctor = (id) => {
+        if (window.confirm('Are you sure to delete')) {
+            window.location.href = '/admin/deletedoctor?id=' + id;
+        }
+    }
+</script>
+
+</html>

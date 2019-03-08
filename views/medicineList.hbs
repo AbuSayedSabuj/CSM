@@ -1,0 +1,429 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {}
+
+    @keyframes moveLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(300px)
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        50% {}
+
+        75% {}
+
+        100% {}
+    }
+
+    .ctitle {
+        animation: moveLeft 2s ease-out;
+    }
+
+    .cover {
+        height: 90vh;
+        position: relative;
+        background-repeat: none;
+        background-size: 100%;
+        background-position: top;
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%)
+    }
+
+    #title {
+        color: rgba(41, 43, 36, 0.562);
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        left: 40%;
+        top: 50%;
+        position: relative;
+    }
+</style>
+
+<body>
+
+    {{>publicnav}}
+
+    <div class="col-md-10 col-md-offset-1">
+        <center>
+            <h3><b>Pharma Product</b></h3>
+        </center>
+        <form action="product-details.php" method="POST">
+        </form>
+
+    </div>
+    </div>
+    <div class="row">
+        <div class="pthumb-section">
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/ACE-PLUS.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Ace Plus<sup>®</sup></h3>
+                            <h4>Paracetamol &amp; Caffeine</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/ACE-PARACETAMOL-500.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Ace<sup>®</sup></h3>
+                            <h4>Paracetamol</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/ACETRAM.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Acetram<sup>®</sup></h3>
+                            <h4>Paracetamol+Tramadol</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/ADRYL-100ml.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Adryl<sup>®</sup></h3>
+                            <h4>Diphenhydramine HCl</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/AFUN-Cream.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Afun<sup>®</sup></h3>
+                            <h4>Afun<sup>®</sup> VT</sup></h4>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/Alacot-DS1.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Alacot<sup>®</sup> DS Eye Drops</h3>
+                            <h4>Antiallergic</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/Alacot_o1.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Alacot<sup>®</sup>Eye Drops</h3>
+                            <h4>Olopatadine HCl</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/ALADRID-0-025.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Alarid<sup>®</sup>Eye Drops</h3>
+                            <h4>Diphenhydramine HCl</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/ALATROL-10MG.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Alatrol<sup>®</sup></h3>
+                            <h4>Cetirizine HCl</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/alice-lotion.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Alice<sup>TM</h3>
+                            <h4>Ivermectin BP 0.5%</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/Ambrisan-carton_large.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Ambrisan <sup>™</sup>5</h3>
+                            <h4>Ambrisentan</sup></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/AMBOX-15ml.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Ambrox<sup>®</sup></h3>
+                            <h4>Ambroxol</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/AMODIS-60ML.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Amodis<sup>®</sup></h3>
+                            <h4>Metronidazole</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/Amodis-infusion_l.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Amodis<sup>®</sup>500 IV</h3>
+                            <h4>Metronidazole 0.5% w/v IV Infusion</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="pthumb">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/ANADOL-50MG.jpg"
+                                    width="184" height="100"></a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                            <h3>Anadol<sup>®</sup></h3>
+                            <h4>Tramadol HCl</sup></h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            </center>
+
+            <div class="col-md-10 col-md-offset-1">
+                <form action="product-details.php" method="POST">
+                </form>
+                <center>
+                    <h3><b>Nutraceuticals Product</b></h3>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="pthumb-section">
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="pthumb">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                                <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/Adovas-Picture_1oo.jpg"
+                                        width="184" height="100"></a></div>
+                            </div>
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid">
+                                <!-- <h3><span style='font-size:0.85em;'>Adovas<sup>®</sup></span></h3> -->
+
+                                <h3>Adovas<sup>®</sup></h3>
+
+                                <h4>Adhatoda vasica</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="pthumb">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                                <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/AMCIVIT-SYRUP-100ML.jpg"
+                                        width="184" height="100"></a></div>
+                            </div>
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid">
+                                <!-- <h3><span style='font-size:0.85em;'>AmCivit<sup>&reg;</sup></span></h3> -->
+
+                                <h3>AmCivit<sup>®</sup></h3>
+
+                                <h4>Amlaki rashayan</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="pthumb">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                                <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/Arubin_Product-photo.png"
+                                        width="184" height="100"></a></div>
+                            </div>
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid">
+                                <h3>Arubin<sup>®</sup></h3>
+                                <h4>Herbal hematinic</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 col-md-offset-1">
+                <form action="product-details.php" method="POST">
+                </form>
+                <center>
+                    <h3><b>AgroVet & Pesticides Product</b></h3>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="pthumb-section">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="pthumb">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                                <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/Ace-Vet-Carton_large.png"
+                                        width="184" height="100"></a></div>
+                            </div>
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid">
+                                <h3>Ace-Vet<sup>®</sup>Bolus</h3>
+                                <h4>Paracetamol</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="pthumb">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                                <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/arrizeb_nn.jpg"
+                                        width="184" height="100"></a></div>
+                            </div>
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                                <h3>Agrizeb<sup>®</sup></h3>
+                                <h4>Mancozeb</sup></h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="pthumb">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                                <div class="imgth-holder"><img src="http://www.squarepharma.com.bd/products/Almex-5X4-Bolus_large.png"
+                                        width="184" height="100"></a></div>
+                            </div>
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sm-mid row-no-padding-left">
+                                <h3>Almex-Vet<sup>®</sup>Bolus</h3>
+                                <h4> Albendazole</sup></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>

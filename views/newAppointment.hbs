@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctorlist</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+    {{>publicnav}}
+    </div>
+    <center>
+        <h4>
+            <p><b>Please Sign In for Book Your Online Appointment</b>
+                <p><b>If you are experiencing a medical emergency, please call 01970790971</b>
+
+                    <p>
+                        <br>
+                        <p>
+                            <br>
+                            <p>
+                                <br>
+
+                                </div>
+
+
+
+                                <div style="margin-left:100px;width:500px;">
+                                    <span class="text text-danger"><b>{{message}}</b></span>
+                                    <span class="text text-danger"><b>{{error}}</b></span>
+                                    <form action="/signin" method="post">
+
+                                        <div class="form-group">
+
+                                            <span>
+                                                <label for="">User Email</label>
+                                            </span>
+                                            <input type="email" value="{{email}}" name="email" class="form-control"
+                                                placeholder="Please give email address">
+
+                                        </div>
+                                        <div class="form-group">
+
+                                            <span>
+                                                <label for="">User Password</label>
+                                            </span>
+                                            <input type="password" name="password" class="form-control" placeholder="Please give your password">
+
+                                            <input type="submit" class="btn  btn-outline-success" value='Sign In'>
+                                            <span class="text text-warning"><b>Doesn't have an account?</b></span>
+                                            <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;
+                                            <a href="/SignUp" class="btn  btn-outline-danger">Register Now</a>
+                                            <a href="/forgot-password" class="btn  btn-outline-warning">Forget
+                                                Password?</a>
+
+                                    </form>
+                                </div>
+                                </div>
+                                </div>
+
+                                </ul>
+                                </div>
+
+
+
+                                </div>
+
+
+
+
+
+</body>
+
+</html>

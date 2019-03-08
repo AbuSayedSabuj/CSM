@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    {{>adminnav}}
+    </div>
+    <center>
+        <div class="col-sm-4">
+            <div>
+
+                <center>
+                    <h4><b>Sub Admin Registration Form</b></h4>
+                </center>
+
+                <form action="/admin/addadmin" method="post">
+                    <div class="form-group">
+                        <label for="">Role of Sub Admin</label>
+                        <select name="role" id="" class="form-control">
+                            <option value="1">Sub Admin A</option>
+                            <option value="2">Sub Admin B</option>
+                            <option value="3">Sub Admin C</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Full Name</label>
+                        <input name="name" type="text" required="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input name="email" type="text" required="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input name="password" type="password" required="" class="form-control">
+                    </div>
+                    <center>
+                        <input type="submit" class="btn btn-success" value="Submit">
+
+
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body style='background-color:#eeee'>
+
+    {{>staffnav}}
+    <div>
+
+    </div>
+    <h3>
+        <center>Leave Apllication</center>
+    </h3>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <form action="/staff/leave" method="post">
+                <span class="alert alert-warning" id="er" style="display:none"></span>
+                <br>
+                <div class="form-group">
+                    <label for="">Leave type</label>
+                    <select required="" name="type" id="" class="form-control">
+                        <option value="Casual">Casual</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Paternal">Paternal</option>
+                    </select>
+
+                    <div class="form-group">
+                        <label for="">Start Date</label>
+                        <input onchange="isValid()" id="st" name="start" required="" class="form-control" type="date"
+                            placeholder="start date">
+                    </div>
+                    <div class="form-group">
+                        <label for="">End Date</label>
+                        <input onchange="isValid()" id="end" name="end" required="" class="form-control" type="date"
+                            placeholder="End date">
+                    </div>
+                    <div class="form-group">
+                        <textarea required="" name="details" id="" cols="30" rows="5" class="form-control" placeholder="Details"></textarea>
+                    </div>
+                    <input disabled=true type="submit" class="btn btn-info" value="Apply" id="sb">
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    isValid = () => {
+        document.getElementById('sb').disabled = false;
+        document.getElementById("er").innerHTML = "";
+        document.getElementById("er").style.display = "none";
+        st = document.getElementById('st').value;
+        end = document.getElementById('end').value;
+        df = Math.ceil((new Date(st) - new Date()) / (1000 * 24 * 3600));
+        se = Math.ceil((new Date(end) - new Date(st)) / (1000 * 24 * 3600));
+        console.log(df)
+        console.log(se)
+        if (df < 0 || df > 15) {
+            document.getElementById('sb').disabled = true;
+            console.log('there')
+            document.getElementById("er").innerHTML = "Select start day between tommorow and 15 days";
+            document.getElementById("er").style.display = "inline";
+            return;
+        }
+        else if (se < 0 || se > 20) {
+            document.getElementById('sb').disabled = true;
+            console.log('here')
+            document.getElementById("er").innerHTML = "Leave must be 1 to 15 days";
+            document.getElementById("er").style.display = "inline";
+            return;
+        }
+
+    }
+</script>
+
+</html>

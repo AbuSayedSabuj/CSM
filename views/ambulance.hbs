@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {}
+
+    @keyframes moveLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(300px)
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        50% {}
+
+        75% {}
+
+        100% {}
+    }
+
+    .ctitle {
+        animation: moveLeft 2s ease-out;
+    }
+
+    .cover {
+        height: 90vh;
+        position: relative;
+        background-repeat: none;
+        background-size: 100%;
+        background-position: top;
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%)
+    }
+
+    #title {
+        color: rgba(41, 43, 36, 0.562);
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        left: 40%;
+        top: 50%;
+        position: absolute;
+    }
+</style>
+
+<body>
+
+    {{>publicnav}}
+
+    <div class="col-md-10 col-md-offset-1">
+        <p>
+            <center>
+                <h3><b>Overview</b></h3>
+            </center>
+
+            <h5></h5>
+
+            State-of-the-art Ambulances at our hospital are equipped to handle most complex emergencies and are
+            available to our patients round the clock. Our ambulances are equipped with advanced life support systems
+            and carry a doctor on board for cardiac and other life-threatening emergencies.
+        </p>
+        <br>
+        <center>
+            <img style="width:700px" src="http://www.lilavatihospital.com/uploads/home_banner/InnerBanner-1207-4603-0114.jpg"
+                alt="">
+        </center>
+
+        <br>
+        <center>
+            <h3><b>Coverage Area</b></h3>
+        </center>
+        <p>
+            Our Ambulance Coverage area are Dhaka, Gazipur, Sonargaon, Narayangonj, Munsigonj.
+        </p>
+        <center>
+            <h3><b>Request Ambulance</b></h3>
+        </center>
+        <p>
+            A request for ambulance can be made on payment basis on this numbers:
+
+            <b>Ambulance staff:</b>09769250010 
+        </p>
+        <center>
+            <h3><b>Hospital shall not be responsible for following</b></h3>
+        </center> 
+        <p>
+            <li>Technical
+                problem/ failure of equipment/ breakdown of ambulance.
+                <p>
+            <li>Any traffic jam, wrong address given & deadline to reach the destination.
+                </ul>
+        </p>
+        <br>
+    </div>
+    </div>
+</body>
+
+</html>

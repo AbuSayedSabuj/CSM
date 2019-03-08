@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body style='background-color:#eeee'>
+
+    {{>staffnav}}
+    <div>
+
+    </div>
+    <h3>
+        <center>Leave Apllication</center>
+    </h3>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Leave Type</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Details</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each Leave}}
+                    <tr>
+                        <td>{{this.type}}</td>
+                        <td>{{this.from}}</td>
+                        <td>{{this.to}}</td>
+                        <td>{{this.details}}</td>
+                        <td>
+                            {{#if this.aproved}}
+                            Approved
+                            {{else}}
+                            Applied
+                            {{/if}}
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script>
+    isValid = () => {
+        document.getElementById('sb').disabled = false;
+        document.getElementById("er").innerHTML = "";
+        document.getElementById("er").style.display = "none";
+        st = document.getElementById('st').value;
+        end = document.getElementById('end').value;
+        df = Math.ceil((new Date(st) - new Date()) / (1000 * 24 * 3600));
+        se = Math.ceil((new Date(end) - new Date(st)) / (1000 * 24 * 3600));
+        console.log(df)
+        console.log(se)
+        if (df < 0 || df > 15) {
+            document.getElementById('sb').disabled = true;
+            console.log('there')
+            document.getElementById("er").innerHTML = "Select start day between tommorow and 15 days";
+            document.getElementById("er").style.display = "inline";
+            return;
+        }
+        else if (se < 0 || se > 20) {
+            document.getElementById('sb').disabled = true;
+            console.log('here')
+            document.getElementById("er").innerHTML = "Leave must be 1 to 15 days";
+            document.getElementById("er").style.display = "inline";
+            return;
+        }
+
+    }
+</script>
+
+</html>

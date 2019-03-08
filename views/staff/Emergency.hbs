@@ -1,0 +1,272 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <style>
+        /*-----Background-----*/
+
+body{
+	 background-image:url(https://winemakers.imgix.net/ekokpqgtx.jpeg);
+	 background-repeat:no-repeat;
+	 background-size:cover;
+	 width:100%;
+	 height:100vh;
+	 overflow:auto;
+	 
+}
+
+/*-----for border----*/
+.container{
+	font-family:Roboto,sans-serif;
+    background-color:#dee0de;
+     border-style: 1px solid grey;
+     margin: 0 auto;
+     text-align: center;
+     opacity: 0.8;
+     margin-top: 15px;
+   box-shadow: 2px 5px 5px 0px #eee;
+     max-width: 600px;
+     padding-top: 10px;
+     height: 700px;
+    
+}
+/*--- for label of first and last name---*/
+.lastname{
+	 margin-left: 1px;
+     font-family: sans-serif;
+     font-size: 14px;
+     color: black;
+     margin-top: 10px;
+}
+.firstname{
+	 margin-left: 1px;
+     font-family: sans-serif;
+     font-size: 14px;
+     color: black;
+     margin-top: 5px;
+}
+#lname{
+	 margin-top:5px;
+}
+	  
+
+/*---for heading-----*/
+.heading{
+	 text-decoration:bold;
+	 text-align : center;
+	 font-size:30px;
+	 color:rgb(13, 40, 156);
+	 padding-top:10px;
+}
+/*-------for email----------*/
+  /*------label----*/
+#email{
+	  margin-top: 5px;
+}
+/*-----------for Password--------*/
+     /*-------label-----*/
+.mail{
+	 margin-left: 44px;
+     font-family: sans-serif;
+     color: black;
+     font-size: 14px;
+     margin-top: 13px;
+}
+.pass{
+	 color: black;
+     margin-top: 9px;
+     font-size: 14px;
+     font-family: sans-serif;
+     margin-left: 6px;
+     margin-top: 9px;
+}
+#password{
+ margin-top: 6px;
+}
+/*------------for phone Number--------*/
+      /*----------label--------*/
+.pno{
+	 font-size: 18px;
+     margin-left: -13px;
+     margin-top: 10px;
+     color: #ff9;
+	
+}	
+
+/*--------------for Gender---------------*/
+     /*--------------label---------*/
+.gender {
+	 color: black;
+     font-family: sans-serif;
+     font-size: 14px;
+     margin-left: 28px;
+     margin-top: 8px;
+}
+
+     /*---------- for Input type--------*/
+.col-xs-4.male{
+	 color: black;
+     font-size: 13px;
+     margin-top: 9px;
+     padding-bottom: 16px;
+}
+.col-xs-4.female {
+     color: black;
+     font-size: 13px;
+     margin-top: 9px;
+     padding-bottom: 16px;
+	 padding-right: 95px;
+}	
+/*------------For submit button---------*/
+.sbutton{
+	 color: black;
+     font-size: 20px;
+     border: 1px solid white;
+     background-color: #080808;
+     width: 32%;
+     margin-left: 41%;
+     margin-top: 16px;
+	 box-shadow: 0px 2px 2px 0px white;
+  	   
+   }
+.btn.btn-warning:hover {
+    box-shadow: 2px 1px 2px 3px #99ccff;
+	background:#5900a6;
+	color:#fff;
+	transition: background-color 1.15s ease-in-out,border-color 1.15s ease-in-out,box-shadow 1.15s ease-in-out;
+	
+}	 
+	  
+  </style>
+</head>
+
+<body>
+    {{>staffnav}}
+    
+    {{#each emergency}}
+    </div>
+    <center>
+        <div class="col-sm-9">
+
+
+
+
+
+            <h3>
+                <p style="margin-left:9em">Emergency Registration-Form</p>
+            </h3>
+            <hr>
+            </hr>
+            <!---Form starting---->
+            <form action="/staff/emergency" method="post" encType="multipart/form-data">
+                <div class="row " style="width:500;margin-left:10px;">
+                    <!--- For Name---->
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <label class="firstname">Patient name :</label> </div>
+                            <div class="col-xs-8">
+                                <input required="" type="text" name="name" placeholder="Patient Name" class="form-control ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <label class="mail">&nbspAge :</label> </div>
+                            <div class="col-xs-8">
+                                <input required="" type="number" id="email" min="20" max="120" name="age" placeholder="Enter patient age"
+                                    class="form-control ">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----------For Phone number-------->
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row">
+                            <div class="col-xs-4 ">
+                                <label class="gender">Gender:</label>
+                            </div>
+
+                            <div class="col-xs-4 male">
+                                <input type="radio" name="gender" id="gender" value="male">Male</input>
+                            </div>
+
+                            <div class="col-xs-4 female">
+                                <input type="radio" name="gender" id="gender" value="female">Female</input>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <label class="mail">Phone :</label></div>
+                            <div class="col-xs-8">
+                                <input required="" type="text" maxlength="11" minlength="11" id="email" name="phone" id="email"
+                                    placeholder="Enter patient phone no" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <label class="mail">Address :</label></div>
+                            <div class="col-xs-8">
+                                <input required="" type="text" id="email" name="address" placeholder="Enter patient address"
+                                    class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <label class="mail">Department:</label></div>
+                            <div class="col-xs-8">
+                                <select name="department" id="email" class="form-control">
+                                    <option value="Cardiology">Cardiology</option>
+                                    <option value="Neurology">Neurology</option>
+                                    <option value="Surgery">Surgery</option>
+                                    <option value="Dental">Dental</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <label class="mail">Admit Date :</label></div>
+                            <div class="col-xs-8">
+                                <input type="date" required="" id="email" name="join_date" placeholder="Enter Date of joining"
+                                    class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2" style="margin-top:10px">
+                        <button class="btn btn-warning">Submit</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+
+        </div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $('.js-example-basic-multiple').select2();
+    });
+</script>
+
+</html>

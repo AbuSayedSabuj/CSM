@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Patient Billing Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body style="padding:50px; margin:40px">
+    <div class="row" style="border-bottom:5px solid teal;">
+        <div class="col-md-4">
+            <h4>CMS</h4>
+            Address: Gazaria,Munsigonj
+            <br>
+            City: Narayanganj
+            <br>
+            Phone: 01770790971
+            <br>
+            Date:{{dt}}
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h4 style="float:right">Emergency Details</h4>
+            <span style="float:right;margin-top:40px">
+
+            </span>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h4><b>Patient Info</b></h4>
+            <br>
+            Name:{{name}}
+            <br>
+            Address:{{address}}
+            <br>
+            Phone:{{phone}}
+            <br>
+            Email:{{email}}
+        </div>
+        <div class="col-md-6">
+            <div style="float:right">
+                Admission Date:{{admission}}
+                <br>
+
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+</body>
+<script>
+    prints = () => {
+        document.getElementById("bt").style.display = "none";
+        window.setTimeout(function () {
+            window.print();
+        }, 2000);
+        window.setTimeout(function () {
+            document.getElementById("bt").style.display = "inline-block";
+        }, 6000);
+
+    }
+</script>
+
+</html>
